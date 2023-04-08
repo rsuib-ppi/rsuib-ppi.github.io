@@ -674,7 +674,9 @@ function updateResume_HH_Table(){
     var table5Body = table5.querySelector("tbody")
         table5Body.innerHTML = ""
         if(resumeHHData.table["table5"].length > 0){  
-            for(var i = 0; i<10;i++){
+            var maks = 10
+            if(resumeHHData.table["table5"].length < 10){maks = resumeHHData.table["table5"].length}
+            for(var i = 0; i<maks;i++){
                 var tr = document.createElement("tr")
                 var td1 = document.createElement("td")
                     td1.innerHTML = i+1;
@@ -682,6 +684,7 @@ function updateResume_HH_Table(){
                     tr.appendChild(td1)
                 var j = 1
                 while(j < 13){
+                    // return
                     var td = document.createElement("td")
                     td.innerHTML =  resumeHHData.table.table5[i][j]
                     if(j > 3 && j < 8){

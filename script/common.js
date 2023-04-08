@@ -46,11 +46,11 @@ function Toast(text) {
 // ===============================================================================
 async function onload() {
   await includeHTML();
-  // await login("arga", "ppirsi");
+  await login("arga", "ppirsi");
   // await login("guest", "guest")
   // await NavbarTo("Hand Hygiene")
   // await NavbarTo("Kepatuhan APD")
-  // await NavbarTo("Resume")
+  await NavbarTo("Resume")
   // Elem("supervisi-tab").click()
   // spvBabDetail()
   // Elem("spv-detail-btn").click()

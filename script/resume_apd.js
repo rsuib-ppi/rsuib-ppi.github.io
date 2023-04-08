@@ -692,8 +692,10 @@ function updateResume_apd_onChange_Table(){
     var table5 = Elem("tab-res-apd-5")
     var table5Body = table5.querySelector("tbody")
         table5Body.innerHTML = ""
-        if(resumeAPDData.table["table5"].length > 0){  
-            for(var i = 0; i<10;i++){
+        if(resumeAPDData.table["table5"].length > 0){
+            var maks = 10;
+            if(resumeHHData.table["table5"].length < 10){maks = resumeHHData.table["table5"].length}  
+            for(var i = 0; i<maks;i++){
                 var tr = document.createElement("tr")
                 var td1 = document.createElement("td")
                     td1.innerHTML = i+1;

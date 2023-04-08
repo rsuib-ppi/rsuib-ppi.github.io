@@ -173,6 +173,7 @@ function UpdateHHTable(){
             tr.setAttribute("onclick", "EditHH("+dataItem.id+")")
             tr.classList.add('table-link')
         }
+        // console(.)
         var tgl = new Date(dataItem.time)
         var hour = tgl.getHours(); if(hour < 10){hour = "0"+hour}
         var minut = tgl.getMinutes(); if(minut < 10){minut = "0"+minut}

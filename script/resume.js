@@ -15,6 +15,7 @@ function resumeNav(val){
     tabs.forEach((p)=>{
         p.classList.add('d-none')
     })
+    // console.log(tabs)
     if(val === 1){
         ResetResume_HH()
         tabs[0].classList.remove("d-none")
